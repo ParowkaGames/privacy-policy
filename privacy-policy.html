@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Polityka prywatności / Privacy Policy - Who... and What?</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+    .lang-switch { text-align: right; margin-bottom: 20px; }
+    .lang-switch a { margin-left: 10px; text-decoration: none; }
+  </style>
+  <script>
+    function switchLang(lang) {
+      ['pl', 'en', 'de'].forEach(l => {
+        document.getElementById(l).style.display = l === lang ? 'block' : 'none';
+      });
+    }
+
+    // Auto-detect language
+    window.onload = () => {
+      const urlLang = new URLSearchParams(window.location.search).get('lang');
+      const browserLang = navigator.language.toLowerCase();
+      let lang = 'en';
+      if (urlLang) lang = urlLang;
+      else if (browserLang.startsWith('pl')) lang = 'pl';
+      else if (browserLang.startsWith('de')) lang = 'de';
+      switchLang(lang);
+    };
+  </script>
+</head>
+<body>
+
+  <div class="lang-switch">
+    <strong>Język / Language / Sprache:</strong>
+    <a href="?lang=pl" onclick="switchLang('pl'); return false;">Polski</a> |
+    <a href="?lang=en" onclick="switchLang('en'); return false;">English</a> |
+    <a href="?lang=de" onclick="switchLang('de'); return false;">Deutsch</a>
+  </div>
+
+  <!-- Polish -->
+  <div id="pl" style="display:none;">
+    <h1>Polityka prywatności aplikacji "Who... and What?"</h1>
+    <p>Data: 24 lipca 2025<br>Autor: Parowka Games</p>
+
+    <h2>1. Reklamy</h2>
+    <p>Aplikacja korzysta z Google AdMob do wyświetlania reklam.
+    Google może zbierać dane użytkownika zgodnie ze swoją <a href="https://policies.google.com/privacy">polityką prywatności</a>.</p>
+
+    <h2>2. Przechowywanie danych lokalnych</h2>
+    <p>Aplikacja przechowuje dane lokalnie na urządzeniu użytkownika (np. postępy, ustawienia) z wykorzystaniem Hive. Dane nie są przesyłane na serwery.</p>
+
+    <h2>3. Dane osobowe</h2>
+    <p>Aplikacja nie zbiera danych osobowych, takich jak imię, e-mail czy lokalizacja. Wszystko pozostaje na urządzeniu.</p>
+
+    <h2>4. Usługi zewnętrzne</h2>
+    <p>Aplikacja może używać usług firm trzecich, np. Google AdMob, które mogą zbierać dane techniczne (np. IP, system, urządzenie).</p>
+
+    <h2>5. RODO</h2>
+    <p>Użytkownicy z UE mogą być proszeni o zgodę na reklamy spersonalizowane. W przypadku braku zgody – wyświetlane są reklamy niespersonalizowane.</p>
+
+    <h2>6. Kontakt</h2>
+    <p>W razie pytań: 📧 gamesparowka@gmail.com</p>
+
+    <h2>7. Zmiany</h2>
+    <p>Zastrzegamy sobie prawo do zmian w polityce. Aktualizacje będą publikowane na tej stronie.</p>
+  </div>
+
+  <!-- English -->
+  <div id="en" style="display:none;">
+    <h1>Privacy Policy for "Who... and What?"</h1>
+    <p>Date: July 24, 2025<br>Author: Parowka Games</p>
+
+    <h2>1. Ads</h2>
+    <p>The app uses Google AdMob to display ads. Google may collect user data as described in their <a href="https://policies.google.com/privacy">privacy policy</a>.</p>
+
+    <h2>2. Local Data Storage</h2>
+    <p>The app stores data locally (e.g. progress, settings) using Hive. No data is sent to servers.</p>
+
+    <h2>3. Personal Data</h2>
+    <p>The app does not collect personal data like name, email, or location. All data stays on the device.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>The app may use third-party services like Google AdMob, which may collect technical data (e.g. IP, OS, device).</p>
+
+    <h2>5. GDPR</h2>
+    <p>Users in the EU may be asked for consent to personalized ads. If not granted, non-personalized ads are shown.</p>
+
+    <h2>6. Contact</h2>
+    <p>For questions: 📧 gamesparowka@gmail.com</p>
+
+    <h2>7. Changes</h2>
+    <p>We reserve the right to change this policy. Updates will be posted on this page.</p>
+  </div>
+
+  <!-- German -->
+  <div id="de" style="display:none;">
+    <h1>Datenschutzerklärung für "Who... and What?"</h1>
+    <p>Datum: 24. Juli 2025<br>Autor: Parowka Games</p>
+
+    <h2>1. Werbung</h2>
+    <p>Diese App verwendet Google AdMob zur Anzeige von Werbung. Google kann Nutzerdaten gemäß <a href="https://policies.google.com/privacy">seiner Datenschutzrichtlinie</a> erheben.</p>
+
+    <h2>2. Lokale Datenspeicherung</h2>
+    <p>Die App speichert Daten lokal auf dem Gerät (z. B. Fortschritt, Einstellungen) über Hive. Es werden keine Daten an Server gesendet.</p>
+
+    <h2>3. Persönliche Daten</h2>
+    <p>Die App sammelt keine persönlichen Daten wie Name, E-Mail oder Standort. Alle Daten bleiben auf dem Gerät.</p>
+
+    <h2>4. Dienste Dritter</h2>
+    <p>Die App kann Dienste Dritter wie Google AdMob verwenden, die technische Daten (z. B. IP, Betriebssystem, Gerät) erfassen können.</p>
+
+    <h2>5. DSGVO</h2>
+    <p>Nutzer aus der EU können um Zustimmung zu personalisierter Werbung gebeten werden. Ohne Zustimmung wird nicht personalisierte Werbung angezeigt.</p>
+
+    <h2>6. Kontakt</h2>
+    <p>Bei Fragen: 📧 gamesparowka@gmail.com</p>
+
+    <h2>7. Änderungen</h2>
+    <p>Wir behalten uns das Recht vor, diese Richtlinie zu ändern. Änderungen werden auf dieser Seite veröffentlicht.</p>
+  </div>
+
+</body>
+</html>
